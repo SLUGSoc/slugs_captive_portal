@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#6d487a" />
+		<meta name="author" content="Bravewave">
+
+		<title>SLUGS LAN Captive Portal</title>
+
+		<link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/portal-bootstrap.min.css" />
+		<link rel="stylesheet" href="css/portal.css" />
+
+		<script src="js/portal-bootstrap.min.js"></script>
+		<script src="js/portal.js" defer></script>
+		<script src="js/dialog.js" defer></script>
+	</head>
+	<body>
+		<div class="container min-vh-100 d-flex align-items-center">
+			<div class="row w-100 mx-0 justify-content-center">
+				<div class="col-12 col-md-8 col-lg-4">
+					<div class="card p-4">
+						<img
+								src="images/SLUGSoc_logo.png"
+								alt="SLUGSoc Logo"
+								class="w-100 d-block mx-auto mb-3"
+								style="max-width: 20rem;"
+						/>
+						<h1 class="h3 text-center mb-4" id="login-title">SLUGS LAN Sign-On</h1>
+
+						<div id="alert-msg" class="alert alert-danger d-none" role="alert">
+							<span id="error-msg-text"></span>
+						</div>
+
+						<form id="login-form">
+							<div class="input-group mb-3">
+								<div class="form-floating">
+									<input type="text" class="form-control" id="voucher" placeholder required>
+									<label for="voucher">Voucher Code</label>
+								</div>
+								<button type="button" class="btn btn-outline-secondary" id="voucher-help"
+												aria-label="Where do I find my voucher code?">?</button>
+							</div>
+							<button type="submit" class="btn btn-primary w-100 btn-lg">Connect</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<dialog id="help-dialog" aria-labelledby="help-title" autofocus>
+			<div class="p-4">
+				<div class="d-flex justify-content-between align-items-center mb-2">
+					<h2 class="mb-0" id="help-title">FAQ</h2>
+					<button type="button" class="btn-close" id="help-close" aria-label="Close"></button>
+				</div>
+				<div class="accordion my-3" id="faq-accordion">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-one">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-one" aria-expanded="true" aria-controls="collapseOne">
+								What is a voucher code?
+							</button>
+						</h2>
+						<div id="faq-one" class="accordion-collapse collapse show" aria-labelledby="heading-one" data-bs-parent="#faq-accordion">
+							<div class="accordion-body">
+								<p>
+									A <strong>voucher code</strong> is a string of characters provided to you by us which will grant you access to our network for a single LAN party.
+									It will be 12 characters long and consist of exclusively upper- and lower-case letters. Input it into this page and you will be verified as a registered user of the network.
+								</p>
+					</div></div></div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-two">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-two" aria-expanded="false" aria-controls="collapse-two">
+								Where do I find my voucher code?
+							</button>
+						</h2>
+						<div id="collapse-two" class="accordion-collapse collapse" aria-labelledby="heading-two" data-bs-parent="#faq-accordion">
+							<div class="accordion-body">
+								<p>Please check your <strong>Discord DMs</strong>!
+									You should have received a DM from either our R.O.N Discord bot or a member of the committee/tech team.</p>
+					</div></div></div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-three">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-three" aria-expanded="false" aria-controls="collapse-three">
+								Can I use the same voucher code for multiple devices?
+							</button>
+						</h2>
+						<div id="collapse-three" class="accordion-collapse collapse" aria-labelledby="heading-three" data-bs-parent="#faq-accordion">
+							<div class="accordion-body">
+								<p>
+									<strong>Yes!</strong> Each voucher code is valid for up to five devices (more specifically five distinct MAC addresses) across both our wired and wireless networks.
+									You do <strong>not</strong> need a new voucher code for each device, and if you have brought more than five with you... why?
+								</p>
+					</div></div></div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-four">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-four" aria-expanded="false" aria-controls="collapse-four">
+								Can I re-use my voucher code from last LAN?
+							</button>
+						</h2>
+						<div id="collapse-four" class="accordion-collapse collapse" aria-labelledby="heading-four" data-bs-parent="#faq-accordion">
+							<div class="accordion-body">
+								<p>
+									<strong>No.</strong> Voucher codes generated for a given LAN will be expired by the time the next one comes around.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="heading-five">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-five" aria-expanded="false" aria-controls="collapse-five">
+								What if I don't have a voucher code?
+							</button>
+						</h2>
+						<div id="collapse-five" class="accordion-collapse collapse" aria-labelledby="heading-five" data-bs-parent="#faq-accordion">
+							<div class="accordion-body">
+								<p>
+									Please speak to a member of the <strong>committee/tech team</strong>. You can find us either at the lectern or on the end table nearest the lockboxes.
+									If we have somehow disappeared, reach out to us on Discord.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</dialog>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Regular.woff2') format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial Narrow 7';
+  src: url('../fonts/ArialNarrow7.woff2') format(woff2);
+  font-display: swap;
+}
+
+/* Stop scrollbar appearing on mobile */
+.row.min-vh-100 {
+  min-height: 100dvh;
+}
+
+body {
+  font-family: 'Arial Narrow 7', sans-serif;
+}
+
+#login-title {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.card {
+  border: 0.1rem solid #636363;
+  box-shadow:
+      0 .25rem .5rem rgba(0, 0, 0, .15),
+      0 1rem 2rem rgba(0, 0, 0, .2),
+      0 2rem 5rem rgba(0, 0, 0, .3);
+}
+
+/* Make focus glow wrap around help button */
+.input-group:focus-within {
+  border-radius: var(--bs-border-radius);
+  box-shadow: 0 0 0 .25rem rgba(169, 153, 174, .25);
+}
+
+.input-group:focus-within .btn {
+  border-color: #a999ae;
+}
+
+/* Remove input's own glow */
+.input-group .form-control:focus {
+  box-shadow: none;
+  border-color: #a999ae;
+}
+
+#login-form > .btn {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #6d487a;
+  border: 0.2rem solid #2d103a;
+  --bs-btn-active-bg: #977ba1;
+  --bs-btn-active-border-color: #977ba1;
+}
+
+#login-form > .btn:hover {
+  background-color: #977ba1;
+  border: 0.2rem solid #2d103a;
+ }
+
+#login-form > .btn:focus-visible {
+  background-color: #6d487a;
+  border: 0.2rem solid #2d103a;
+  box-shadow: 0 0 0 0.25rem rgba(151, 123, 161, 0.25);
+}
+
+#faq-accordion {
+  --bs-accordion-btn-focus-border-color: #a999ae;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: rgba(169, 153, 174, .15);
+  --bs-accordion-active-color: #4a2a55;
+}
+
+#faq-accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a2a55'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+dialog {
+  border: 0;
+  border-radius: var(--bs-border-radius);
+  padding: 0;
+  width: min(90vw, 30rem);
+  box-shadow:
+      0 .25rem .5rem rgba(0, 0, 0, .15),
+      0 1rem 2rem rgba(0, 0, 0, .2),
+      0 2rem 5rem rgba(0, 0, 0, .3);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, .5);
+}
+
+dialog h2 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#faq-accordion .accordion-button {
+  font-size: 1.25rem;
+}
