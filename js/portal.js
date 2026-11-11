@@ -13,7 +13,6 @@ async function api(endpoint, data = {}) {
 const voucher = document.querySelector('#voucher');
 const alertBox = document.querySelector('#alert-msg');
 const errorText = document.querySelector('#error-msg-text');
-const loginForm = document.querySelector('#login-form');
 
 function showError(msg) {
     errorText.textContent = msg;
