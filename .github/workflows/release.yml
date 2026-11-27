@@ -11,7 +11,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Create zip
         # RUNNER_TEMP ensures the zip can't end up inside the repo, thereby getting zipped itself on subsequent runs
@@ -26,6 +26,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "v${{github.run_number}}" "$RUNNER_TEMP/slugs_portal.zip" \
-          --title "Release ${{github.run_number}}" \
+          gh release create "v1" "$RUNNER_TEMP/slugs_portal.zip" \
+          --title "SLUGS Portal" \
           --notes "Automated compression ready for upload triggered by commit ${{github.sha}}"
