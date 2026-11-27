@@ -26,6 +26,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "v1" "$RUNNER_TEMP/slugs_portal.zip" \
-          --title "SLUGS Portal" \
-          --notes "Automated compression ready for upload triggered by commit ${{github.sha}}"
+          gh release create "v1.$(printf '%02d' ${{ github.run_number }})" "$RUNNER_TEMP/slugs_portal.zip" \
+          --title "OPNsense upload zip" \
+          --notes "Automated compression ready for upload triggered by commit ${{ github.sha }}"
