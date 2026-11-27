@@ -17,6 +17,8 @@
 
 body {
   font-family: 'Arial Narrow 7', sans-serif;
+  /*background: url("../images/tiletest.svg") repeat;*/
+  /*background-size: 256px 256px;*/
 }
 
 #login-title {

@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <pattern id="New_Pattern" data-name="New Pattern" width="17" height="17" patternTransform="translate(-46.94 -46.94) scale(3.09)" patternUnits="userSpaceOnUse" viewBox="0 0 17 17">
+      <rect width="17" height="17" style="fill: none"/>
+      <line x1="16.66" y1="34.34" x2="34.34" y2="16.66" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-0.34" y1="34.34" x2="17.34" y2="16.66" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-17.34" y1="34.34" x2="0.34" y2="16.66" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="16.66" y1="17.34" x2="34.34" y2="-0.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-0.34" y1="17.34" x2="17.34" y2="-0.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-17.34" y1="17.34" x2="0.34" y2="-0.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="16.66" y1="0.34" x2="34.34" y2="-17.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-0.34" y1="0.34" x2="17.34" y2="-17.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="-17.34" y1="0.34" x2="0.34" y2="-17.34" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </pattern>
+  </defs>
+  <rect width="256" height="256" style="fill: #706f6f"/>
+  <path d="M93.64,106.52" transform="translate(0 0)" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <path d="M76,124.2" transform="translate(0 0)" style="fill: none;stroke: #575756;stroke-miterlimit: 10;stroke-width: 2px"/>
+  <rect width="256" height="256" style="fill: url(#New_Pattern)"/>
+</svg>

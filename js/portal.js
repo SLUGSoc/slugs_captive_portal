@@ -1,6 +1,8 @@
 const $ = (selector) => document.querySelector(selector);
 const redirUrl = new URLSearchParams(window.location.search).get("redirurl");
 
+const USERNAME_LENGTH = 10;
+
 async function api(endpoint, data = {}) {
     const res = await fetch(`/api/captiveportal/access/${endpoint}/`, {
         method: "POST",
@@ -25,7 +27,7 @@ $("#login-form").addEventListener("submit", async (event) => {
     event.preventDefault();
     hideError();
 
-    const user = voucher.value.slice(0, 4), password = voucher.value.slice(4);
+    const user = voucher.value.slice(0, USERNAME_LENGTH), password = voucher.value.slice(USERNAME_LENGTH);
 
     try {
         const data = await api("logon",  { user: user, password: password });
